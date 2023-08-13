@@ -1,21 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import {msg,logFxn,SharedUIComponent } from 'shared'
-import { configureRootStore } from 'shared/store'
-import { Provider } from 'react-redux'
+import store from "./src/store";
+import { Provider, useDispatch } from 'react-redux'
+import AppNavigator from "./src/navigation/AppNavigation";
 type Props = {}
-const store = configureRootStore()
+
 const App = (props: Props) => {
   return (
       <Provider store={store}>
-          <View style = {styles.mainContainer}>
-              <Text style = {styles.heading}>From React Native</Text>
-              <Text style = {styles.heading}>{msg}</Text>
-              <Text onPress = {logFxn} style = {styles.heading}>Press me and see log</Text>
-              <SharedUIComponent onPress = {() => {
-                  console.log("Called from mobile")
-              }} />
-          </View>
+          <AppNavigator />
       </Provider>
   )
 }

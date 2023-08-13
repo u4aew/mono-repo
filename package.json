@@ -16,6 +16,7 @@
     "mobile-ios": "yarn workspace mobile ios",
     "mobile-android": "yarn workspace mobile android",
     "shared-build": "yarn workspace shared build",
-    "shared-nodeModules": "yarn workspace shared install"
+    "shared-nodeModules": "yarn workspace shared install",
+    "nodeModules-reset": "rm -rf **/node_modules"
   }
 }
