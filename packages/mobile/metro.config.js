@@ -10,7 +10,7 @@ const path = require("path");
 const config = {
   watchFolders: [
     path.resolve(__dirname, '../../node_modules'),
-    path.resolve(__dirname, '../../node_modules/shared/dist')
+    path.resolve(__dirname, '../../node_modules/shared')
   ],
   resolver: {
     extraNodeModules: {

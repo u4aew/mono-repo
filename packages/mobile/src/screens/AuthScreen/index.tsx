@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Button } from "react-native";
+import { View, Button } from "react-native";
 import { useDispatch } from "react-redux";
 import { start } from 'shared/store/features/register/slice'
 
@@ -15,7 +15,7 @@ const AuthScreen = () => {
     }
 
     return <View>
-        <Button title='Нажми на меня' onPress={onPress} />
+        <Button title='Нажми на sda' onPress={onPress} />
     </View>
 }
 

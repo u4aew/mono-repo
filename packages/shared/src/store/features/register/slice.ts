@@ -26,9 +26,11 @@ export const start = createAsyncThunk<any, string, {
     state: RootState
 }>('register/start', async (email, {rejectWithValue}) => {
     try {
+        alert('342')
         const { data } = await axios.post(config.apiMethods.registerStart, {
             login: email,
         });
+        console.log(data, '3243')
         return data
     } catch (error) {
        console.warn(error)
