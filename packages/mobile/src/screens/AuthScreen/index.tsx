@@ -1,21 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Button } from "react-native";
 import { useDispatch } from "react-redux";
-import { start } from 'shared/store/features/register/slice'
+import { TextInput, StyleSheet, Text } from 'react-native';
+import AuthForm from "./components/AuthForm";
 
 const AuthScreen = () => {
+    const [text, setText] = useState('das')
     const dispatch = useDispatch()
-
-    const onPress = async () => {
-         try {
-             const data = await dispatch(start('ersa'))
-         } catch (e) {
-             console.warn(e)
-         }
-    }
-
     return <View>
-        <Button title='Нажми на sda' onPress={onPress} />
+        <AuthForm />
+        <Button title='Нажми на 234' onPress={console.log} />
+        <View>
+            <TextInput placeholder={'sdaas'} />
+        </View>
     </View>
 }
 
