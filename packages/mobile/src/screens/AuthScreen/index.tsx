@@ -1,11 +1,21 @@
 import React from 'react'
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
+import { useDispatch } from "react-redux";
+import { start } from 'shared/store/features/register/slice'
 
 const AuthScreen = () => {
+    const dispatch = useDispatch()
+
+    const onPress = async () => {
+         try {
+             const data = await dispatch(start('ersa'))
+         } catch (e) {
+             console.warn(e)
+         }
+    }
+
     return <View>
-        <Text>
-            Привет
-        </Text>
+        <Button title='Нажми на меня' onPress={onPress} />
     </View>
 }
 

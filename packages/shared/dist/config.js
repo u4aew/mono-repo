@@ -6,15 +6,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Config {
     constructor() {
-        this.apiPrefix = '';
-        this.gwApiPrefix = '';
+        this.apiPrefix = 'https://dating.free.beeceptor.com';
         this.errors = {};
         this.errorsTitle = {};
         this.errorsSubtitle = {};
         this.defaultLogoForTeam = '';
     }
     get apiMethods() {
-        const { apiPrefix, gwApiPrefix } = this;
+        const { apiPrefix } = this;
         return {
             registerStart: `${apiPrefix}/registration/start`,
             registerCheck: `${apiPrefix}/registration/check`,

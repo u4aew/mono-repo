@@ -4,7 +4,6 @@
  */
 declare class Config {
     apiPrefix: string;
-    gwApiPrefix: string;
     errors: {};
     errorsTitle: {};
     errorsSubtitle: {};

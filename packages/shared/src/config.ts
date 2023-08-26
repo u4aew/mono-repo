@@ -4,9 +4,7 @@
  */
 
 class Config {
-    apiPrefix = '';
-
-    gwApiPrefix = '';
+    apiPrefix = 'https://dating.free.beeceptor.com';
 
     errors = {};
 
@@ -17,7 +15,7 @@ class Config {
     defaultLogoForTeam = '';
 
     get apiMethods(): { [key: string]: string } {
-        const { apiPrefix, gwApiPrefix } = this;
+        const { apiPrefix } = this;
 
         return {
             registerStart: `${apiPrefix}/registration/start`,
