@@ -1,7 +1,3 @@
-Certainly! Here's your README file rewritten in English with added information indicating that it's a monorepo for practice and pet projects.
-
----
-
 # React and React Native Monorepo
 
 This is a simple monorepo designed for practice and pet projects. A monorepo (mono repository) is a version control setup that consolidates multiple projects into a single repository. These projects can be entirely distinct or share common functionalities and business logic.
