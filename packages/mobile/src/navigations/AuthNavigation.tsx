@@ -1,6 +1,6 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AuthScreen from '../screens/AuthScreen';
+import LoginScreen from '../screens/auth/views/Login';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +15,7 @@ const Index = () => {
                 fontWeight: 'bold',
             },
         }}>
-            <Stack.Screen name="AuthScreen" component={AuthScreen} />
+            <Stack.Screen name="LoginScreen" component={LoginScreen} />
         </Stack.Navigator>
     );
 };

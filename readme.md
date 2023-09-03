@@ -1,14 +1,17 @@
-# Mono Repo in react and react native
+Certainly! Here's your README file rewritten in English with added information indicating that it's a monorepo for practice and pet projects.
 
-A monorepo (mono repository) is a version management configuration that stores many projects in one repository. The projects can be unrelated and can be completely distinct.
+---
 
-Monorepo is helpful in such projects where we are having multiple projects sharing common functional or business logics.
-Follow this [blog](https://medium.com/@shuklaaman892/mono-repo-react-18-2-0-and-react-native-0-72-3-project-using-yarn-workspace-a85dc443707b) for help.
+# React and React Native Monorepo
+
+This is a simple monorepo designed for practice and pet projects. A monorepo (mono repository) is a version control setup that consolidates multiple projects into a single repository. These projects can be entirely distinct or share common functionalities and business logic.
+![ios](img/ios.jpg) ![ios](img/android.jpg)
 
 ## Installation
 
-run following commands in root step by step to run this project.
-1. create node modules of projects
+To get this project up and running, execute the following commands in the root directory, one by one:
+
+### Initialize Project Node Modules
 
 ```bash
 yarn web-nodeModules
@@ -16,12 +19,18 @@ yarn mobile-nodeModules
 yarn shared-nodeModules
 yarn shared-build
 ```
-Now to run web app use
+
+### Running the Web App
+
+To start the web application, use the following command:
 
 ```bash
 yarn web-start
 ```
-and to run on mobile use
+
+### Running the Mobile App
+
+To launch the mobile application, execute these commands:
 
 ```bash
 yarn mobile-pods
@@ -29,3 +38,7 @@ yarn mobile-start
 yarn mobile-ios
 yarn mobile-android
 ```
+
+---
+
+Feel free to update and expand upon this README as needed.

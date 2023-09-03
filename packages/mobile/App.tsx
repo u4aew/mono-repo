@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import store from "./src/store";
 import { Provider, useDispatch } from 'react-redux'
-import AppNavigator from "./src/navigation/AppNavigation";
+import AppNavigator from "./src/navigations/AppNavigation";
 type Props = {}
 
 const App = (props: Props) => {
