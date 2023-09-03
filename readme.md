@@ -38,5 +38,3 @@ yarn mobile-android
 ```
 
 ---
-
-Feel free to update and expand upon this README as needed.
