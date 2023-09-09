@@ -1,20 +1,24 @@
 import React from 'react'
 import {View} from "react-native";
 import {TextInput, StyleSheet, Text} from "react-native";
+import MaskInput from 'react-native-mask-input';
 
 type Props = {
     label: string;
+    value: string;
+    onChange: (value: string) => void;
+    autoFocus?: boolean
 }
 
-const Input = ({label, ...props}: Props) => {
-    return <View style={style.box}>
-        {label && <View style={style.label}>
-            <Text style={style.labelCaption}> {label} </Text>
-        </View>}
-        <View>
-            <TextInput {...props} style={style.input}/>
-        </View>
-    </View>
+const Input = ({value, onChange, ...props}: Props) => {
+    return <MaskInput
+        style={style.input}
+        value={value}
+        onChangeText={onChange}
+        keyboardType="phone-pad"
+        mask={['+', '7', ' ', /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, ' ', /\d/, /\d/, ' ', /\d/, /\d/]}
+        {...props}
+    />
 }
 
 

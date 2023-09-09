@@ -1,21 +1,21 @@
 import React from 'react'
-import { KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import LoginForm from "../../components/LoginForm";
 
 const AuthScreen = () => {
-    return <KeyboardAvoidingView  style={style.screen} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+    return <View  style={style.screen}>
         <LoginForm />
-    </KeyboardAvoidingView>
+    </View>
 }
 
 
 const style = StyleSheet.create({
     screen: {
         flex: 1,
+        backgroundColor: 'white',
         paddingHorizontal: 10,
         paddingVertical: 15,
     },
-    form: {}
 })
 
 export default AuthScreen
